@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
     private let titleLabel: UILabel = {
         let label = UILabel()
@@ -64,7 +64,7 @@ class ViewController: UIViewController {
 
     @objc
     private func openSecondScreenTapped() {
-        let secondVC = SecondModule.build()
+        let secondVC = VideoModule.build()
         present(secondVC, animated: true)
     }
 }
